@@ -29,17 +29,30 @@ tableShow.addEventListener("click", () => {
 let inputPhone = document.getElementById("username");
 inputPhone.oninput = () => phoneMask(inputPhone);
 function phoneMask(inputEl) {
+
   let patStringArr = "+7(___)___-__-__".split("");
   let arrPush = [3, 4, 5, 7, 8, 9, 11, 12, 14, 15];
   let val = inputEl.value;
-  let arr = val.replace(/\D+/g, "").split("").splice(1);
+
+  let arr = val.replace(/\D+/g, "").split("").splice(1)
+
+
+
+  console.log(patStringArr)
   let n;
   let ni;
-  arr.forEach((s, i) => {
-    n = arrPush[i];
-    patStringArr[n] = s;
-    ni = i;
-  });
+
+
+  if(arr.length < 1) {
+    patStringArr[3] = val
+  } else{
+    arr.forEach((s, i) => {
+      n = arrPush[i];
+      patStringArr[n] = s;
+      ni = i;
+    });
+  }
+
   inputEl.value = patStringArr.join("");
   n ? inputEl.setSelectionRange(n + 1, n + 1) : inputEl.setSelectionRange(17, 17);
 }
@@ -105,8 +118,13 @@ const inputPhones = document.querySelector('.input__phone')
 const inputName = document.querySelector('.input__name')
 const btnSend = document.querySelector('.button__send')
 
+inputPhones.oninput = () => phoneMask(inputPhones);
+
+
 btnSend.addEventListener('click', (e) =>{
   e.preventDefault()
   onSubmit(inputName, inputPhones, e)
 })
+
+
 
