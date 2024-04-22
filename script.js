@@ -36,15 +36,13 @@ function phoneMask(inputEl) {
 
   let arr = val.replace(/\D+/g, "").split("").splice(1)
 
-
-
-  console.log(patStringArr)
+  
   let n;
   let ni;
 
 
-  if(arr.length < 1) {
-    patStringArr[3] = val
+  if(arr.length < 1 && val.slice(0, 2) != '+7') {
+    patStringArr[3] = inputEl.value
   } else{
     arr.forEach((s, i) => {
       n = arrPush[i];
