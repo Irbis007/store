@@ -1,0 +1,356 @@
+.our-system__subtitle {
+  margin-top: 32px;
+}
+
+.our-system__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.our-system__item {
+  max-width: 373px;
+  width: 100%;
+  background-color: #fff;
+  padding-bottom: 80px;
+
+  border-radius: 20px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  text-align: right;
+}
+
+.card__top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.card__img {
+  position: absolute;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.our-system__item:nth-child(1) .card__img {
+  padding: 8px 0 0 14px;
+}
+.our-system__item:nth-child(2) .card__img {
+  padding: 26px 0 0 23px;
+}
+.our-system__item:nth-child(3) .card__img {
+  padding: 65px 0 0 26px;
+}
+
+.card__text {
+  margin-left: auto;
+  max-width: 188px;
+}
+
+.card__title {
+  font-size: 50px;
+  margin-top: 30px;
+}
+
+.card__subtitle {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.card__benefit {
+  color: #00000080;
+  font-size: 19px;
+  margin-top: 20px;
+  line-height: 150%;
+}
+
+.our-system__item > .card__benefit {
+  padding-right: 20px;
+  margin-top: 30px;
+}
+
+.card__price {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.price__numbers {
+  position: relative;
+  bottom: -85px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 26px;
+}
+
+.price__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  background-color: #929292;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+
+  font-weight: 700;
+  font-size: 18px;
+  text-align: right;
+  color: #a9a9a9;
+}
+
+.price__number_active {
+  background-color: #2954b1;
+  color: #fff;
+}
+
+
+.price__title {
+  font-size: 35px;
+}
+
+.price__period {
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.price__year {
+  margin-top: 10px;
+  color: #2a55b270;
+  font-size: 16px;
+}
+
+.price__button{
+  position: absolute;
+  bottom: -150px;
+  right: 20px;
+  font-size: 20px;
+  padding: 8px 34px;
+}
+
+
+@media (max-width: 1440px) {
+  .our-system__item{
+    width: 325px;
+    padding-bottom: 25px;
+  }
+  .card__title{
+    font-size: 40px;
+  }
+  .card__benefit{
+    font-size: 18px;
+  }
+  .card__subtitle{
+    font-size: 25px;
+  }
+  .our-system__item .card__img img{
+    width: 100%;
+  }
+  .our-system__item:nth-child(1) .card__img{
+    width: 166px;
+  }
+  .our-system__item:nth-child(2) .card__img{
+    width: 126px;
+  }
+  .our-system__item:nth-child(3) .card__img{
+    width: 112px;
+    padding-top: 26px;
+  }
+  .price__numbers{
+    height: max-content;
+    bottom: -60px;
+  }
+  .price__button{
+    position: absolute;
+    bottom: -78px;
+    right: 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .our-system__subtitle {
+    margin-top: 40px;
+  }
+  .our-system__cards {
+    margin-top: 40px;
+    gap: 10px;
+  }
+  .our-system__item{
+    max-width: 285px;
+    width: 100%;
+  }
+  .card__top{
+    padding-right: 14px;
+  }
+  .our-system__item > .card__benefit{
+    padding-right: 14px;
+  }
+  .card__title{
+    font-size: 38px;
+  }
+  .card__subtitle{
+    font-size: 19px;
+  }
+  .our-system__item:nth-child(1) .card__img{
+    width: 143px;
+    padding: 6px 0 0 8px;
+  }
+  .our-system__item:nth-child(2) .card__img{
+    width: 110px;
+    padding: 20px 0 0 22px;
+  }
+  .our-system__item:nth-child(3) .card__img{
+    width: 104px;
+    padding: 30px 0 0 14px;
+  }
+  .card__benefit{
+    font-size: 16px;
+  }
+  .card__price{
+    padding-right: 14px;
+  }
+  .price__numbers{
+    bottom: -105px;
+  }
+  .price__number{
+    width: 23px;
+    height: 23px;
+    font-size: 14px;
+  }
+  .price__title{
+    font-size: 31px;
+  }
+  .price__period{
+    font-size: 19px;
+    margin-top: 0px;
+  }
+  .price__year{
+    font-size: 14px;
+  }
+  .price__button{
+    position: static;
+    font-size: 17px;
+    padding: 7px 30px;
+    margin-top: 26px;
+  }
+}
+
+@media (max-width: 900px) {
+  .our-system__item:nth-child(1) .card__img{
+    width: 123px;
+  }
+  .our-system__item:nth-child(2) .card__img{
+    width: 90px;
+  }
+  .our-system__item:nth-child(3) .card__img{
+    width: 94px;
+  }
+  .card__text{
+  max-width: 150px;
+  }
+  .our-system__item > .card__benefit{
+    margin-left: auto;
+    max-width: 185px;
+  }
+  .card__benefit{
+    font-size: 13px;
+  }
+  .price__numbers{
+    margin-left: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-system__item{
+    max-width: 230px;
+  }
+  .our-system__item:nth-child(1) .card__img{
+    width: 120px;
+  }
+  .our-system__item:nth-child(2) .card__img{
+    width: 85px;
+    padding: 18px 0 0 15px;
+  }
+  .our-system__item:nth-child(3) .card__img{
+    width: 89px;
+    padding: 25px 0 0 11px;
+  }
+  .card__title{
+    font-size: 31px;
+  }
+  .card__subtitle{
+    font-size: 15px;
+  }
+  .card__top .card__benefit{
+    max-width: 91px;
+    margin-left: auto;
+    margin-top: 4px;
+  }
+  .our-system__item > .card__benefit{
+    margin-top: 10px;
+    padding-right: 10px;
+  }
+  .card__top{
+    padding-right: 10px;
+  }
+  .card__benefit{
+    font-size: 12px;
+  }
+  .card__price{
+    padding-right: 10px;
+  }
+  .price__title{
+    font-size: 24px;
+  }
+  .price__period{
+    font-size: 15px;
+  }
+  .price__year{
+    font-size: 11px;
+  }
+  .price__button{
+    font-size: 13px;
+    padding: 5px 22px;
+    margin-top: 20px;
+  }
+  .price__numbers{
+    gap: 4px;
+    bottom: -85px;
+  }
+  .price__number{
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-system__cards{
+    overflow: auto;
+    padding: 20px 12px 20px 0;
+  }
+  .our-system__item{
+    flex-shrink: 0;
+    max-width: unset;
+    width: 230px;
+  }
+}
+
+@media (max-width: 576px) {
+  .our-system__subtitle {
+    margin-top: 30px;
+  }
+  .our-system__cards {
+    padding: 20px 12px;
+    overflow: auto;
+    margin-top: 30px;
+  }
+  .our-system__item {
+    flex-shrink: 0;
+    width: 230px;
+  }
+}

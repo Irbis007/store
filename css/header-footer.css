@@ -1,0 +1,287 @@
+
+
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+:is(.header, .footer) .container{
+  display: flex;
+  align-items: center;
+}
+
+.header__logo, .footer__logo{
+  width: 123px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.menu__content{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.menu__hamburger{
+  display: none;
+}
+
+:is(.header__logo, .footer__logo) img{
+  width: 100%;
+}
+
+:is(.header, .footer) .line {
+  width: 100%;
+  max-height: 3px;
+}
+:is(.header, .footer) .line img{
+  width: 100%;
+}
+
+.header .container{
+  padding: 27px 5px;
+}
+.footer .container{
+  padding: 22px 5px;
+}
+
+.nav{
+  margin-left: auto;
+}
+
+.header__list, .footer__list{
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  font-size: 20px;
+}
+
+.header__link, .footer__link, .phone a{
+  color: #fff;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+:is(.header__link, .footer__link, .phone a):hover{
+  opacity: .8;
+  transition: all .2s;
+}
+
+.phone{
+  padding-left: 100px;
+}
+
+.footer .phone{
+  padding-left: 36px;
+}
+
+.phone a{
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+.footer{
+  margin-top: 150px;
+  padding: 49px 0 57px;
+  background-color: #2954B1;
+}
+
+
+@media (max-width: 1440px) {
+  .header__logo, .footer__logo{
+    width: 105px;
+  }
+  .header__list, .footer__list{
+    gap: 40px;
+  }
+  .phone{
+    padding-left: 70px;
+  }
+  .footer .phone{
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header .container, .footer .container{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .header__logo, .footer__logo{
+    width: 99px;
+  }
+  .footer{
+    margin-top: 70px;
+  }
+  .phone{
+    padding-left: 35px;
+  }
+  .footer .phone{
+    padding-left: 20px;
+  }
+  .phone a{
+    font-size: 19px;
+  }
+  .phone-icon{
+    width: 23px;
+  }
+  .phone-icon img{
+    width: 100%;
+  }
+  .header__list, .footer__list{
+    font-size: 18px;
+  }
+  .footer .line{
+    display: none;
+  }
+}
+
+@media (max-width: 870px) {
+  .header__list, .footer__list{
+    gap: 25px;
+    font-size: 17px;
+  }
+  .phone {
+    padding-left: 17px;
+  }
+  .footer .phone{
+    padding-left: 0;
+  }
+  .header__logo, .footer__logo{
+    width: 90px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header .container{
+    padding: 19px 0;
+  }
+  .header .container, .footer .container{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header__logo, .footer__logo{
+    width: 86px;
+  }
+  .header__list, .footer__list{
+    gap: 25px;
+  }
+  .phone{
+    padding-left: 16px;
+  }
+  .phone-icon{
+    width: 18.5px;
+  }
+  .header__list, .footer__list{
+    font-size: 15px;
+  }
+  .phone a{
+    font-size: 15px;
+  }
+  .footer{
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 670px) {
+  .header__logo, .footer__logo{
+    width: 70px;
+  }
+  .header__list, .footer__list{
+    font-size: 14px;
+    gap: 12px;
+  }
+  .phone {
+    padding-left: 10px;
+  }
+}
+
+
+
+@media (max-width: 576px) {
+  .header__logo, .footer__logo{
+    width: 63px;
+  }
+  .menu{
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    flex-direction: column;
+    align-items: end;
+    gap: 30px;
+
+    width: 70%;
+    min-height: 100svh;
+    padding: 93px 12px 12px;
+    background-color: #2954B1;
+    transform: translateX(100%);
+    transition: all .3s;
+    z-index: 100;
+  }
+  .menu.menu_active{
+    transform: translateX(0);
+    transition: all .3s;
+  }
+  .menu__hamburger{
+    position: absolute;
+    top: 28px;
+    right: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    z-index: 1000;
+    transition: transform .3s;
+  }
+  .menu_active.menu__hamburger{
+    position: fixed;
+    transform: rotate(90deg);
+    transition: transform .3s;
+  }
+  .menu__line{
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: #fff;
+  }
+  .header .phone{
+    margin-left: auto;
+  }
+  .header__list{
+    flex-direction: column;
+    align-items: end;
+    gap: 13px;
+  }
+  .header__list, .footer__list{
+    font-size: 15px;
+  }
+  .footer{
+    margin-top: 50px;
+  }
+  .footer .container{
+    display: block;
+  }
+  .footer__list{
+    margin-top: 24px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 130px);
+  }
+  .footer__item:nth-child(3){
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  .footer__item:nth-child(4){
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+}

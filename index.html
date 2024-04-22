@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="toastify__container">Контактные данные записаны</div>
+    <div class="modal">
+      <div class="container">
+        <div class="modal__wrapper">
+          <div class="close__button">
+            <img src="assets/icons/close.svg" alt="close" />
+          </div>
+          <div class="modal__img">
+            <img src="./assets/icons/modal.svg" alt="modal" />
+          </div>
+          <form class="modal__form form">
+            <h3 class="title form__title">Получить консультацию</h3>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              class="form__input input"
+              placeholder="Ваше имя"
+            />
+            <input
+              type="tel"
+              id="username"
+              name="username"
+              class="form__input input phone"
+              placeholder="Ваш телефон"
+              value="+7(___)___-__-__"
+            />
+            <p class="descr form__descr">
+              Нажимая “Отправить” вы подтверждаете свое согласие на обработку и хранение ваших
+              персональных данных в соответствии с
+              <a href="#">политикой обработки персональных данных</a>.
+            </p>
+            <button class="button form__button">Отправить запрос</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo logo">
+          <img src="./assets/icons/logo.svg" alt="logo" />
+        </div>
+        <div class="menu__hamburger">
+          <span class="menu__line"></span>
+          <span class="menu__line"></span>
+          <span class="menu__line"></span>
+        </div>
+        <menu class="menu">
+          <nav class="header__nav nav">
+            <ul class="header__list list">
+              <li class="header__item item">
+                <a href="#about" class="header__link link">О нас</a>
+              </li>
+              <li class="header__item item">
+                <a href="#ourSolutions" class="header__link link">Наши решения</a>
+              </li>
+              <li class="header__item item">
+                <a href="#products" class="header__link link">Продукты</a>
+              </li>
+              <li class="header__item item">
+                <a href="#howItWork" class="header__link link">Как это работает</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__phone phone">
+            <a href="tel:+78008999999">
+              <span class="phone-icon">
+                <img src="./assets/icons/phone.svg" alt="phone" />
+              </span>
+              <span> 8 800 899 99 99 </span>
+            </a>
+          </div>
+        </menu>
+      </div>
+      <div class="header__line line">
+        <img src="./assets/icons/line.svg" alt="line" />
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="intro">
+        <div class="deckor-1 deckor"></div>
+        <div class="deckor-2 deckor"></div>
+        <div class="container">
+          <div class="intro__body">
+            <div class="intro__subtitle">Воспользуйтесь</div>
+            <h1 class="title intro__title">Self-Storage</h1>
+            <p class="intro__descr descr">
+              Удобное и надежное решение для хранения ваших личных вещей, обеспечивая просторное
+              пространство и гибкую аренду.
+            </p>
+            <div class="intro__buttons">
+              <button class="button intro__button_white open__button">
+                Консультация
+                <img src="./assets/icons/arrow_blue.svg" alt="" />
+              </button>
+              <button class="button intro__button">Демо-версия</button>
+            </div>
+          </div>
+          <div class="intro__img">
+            <div class="intro__img_wrapper">
+              <img src="./assets/icons/intro.svg" class="intro__img-main" alt="intro" />
+              <img src="./assets/icons/boxes.svg" class="intro__img-boxes" alt="intro" />
+              <img src="./assets/icons/intro__modal.svg" class="intro__img-modal" alt="intro" />
+            </div>
+
+            <div class="helper helper-1">
+              <div class="helper__top">Узнайте больше</div>
+              <div class="helper__body open__button">
+                <div class="helper__title">о нашей продукции</div>
+                <div class="helper__content">
+                  <div>
+                    Узнайте больше о том,
+                    <br />
+                    о нашей продукции
+                  </div>
+                  <img src="./assets/icons/arrow_white.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="helper helper-2">
+              <div class="helper__top">Забронировать -</div>
+              <div class="helper__body open__button">
+                <div class="helper__title">легко и просто!</div>
+                <div class="helper__content">
+                  <div>
+                    Узнайте больше о том, <br />
+                    как это сделать
+                  </div>
+                  <img src="./assets/icons/arrow_white.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="arrow__down">
+            <img src="./assets/icons/arrow_white.svg" alt="arrow down" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__img">
+            <img src="./assets/icons/about.svg" alt="about" />
+          </div>
+          <div class="about__body">
+            <h2 class="title about__title">О нас</h2>
+            <p class="descr about__descr">
+              Контейнеры хранения Self Storage предоставляют удобное и безопасное решение для
+              хранения различных вещей, от мебели до сезонных предметов. Современные системы
+              безопасности и гибкие условия аренды делают эти контейнеры идеальным выбором для
+              организации пространства и сохранения ценных вещей.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="solutions" id="ourSolutions">
+        <div class="container">
+          <h2 class="title solutions__title">Проблемы, которые мы решаем</h2>
+          <ul class="solutions__list">
+            <li class="solution__item">
+              <h4 class="solution__title title">Проблема</h4>
+              <div class="solution__descr descr">
+                Способ решения проблемы. Способ решения проблемы
+              </div>
+            </li>
+            <li class="solution__item">
+              <h4 class="solution__title title">Проблема</h4>
+              <div class="solution__descr descr">
+                Способ решения проблемы. Способ решения проблемы
+              </div>
+            </li>
+            <li class="solution__item">
+              <h4 class="solution__title title">Проблема</h4>
+              <div class="solution__descr descr">
+                Способ решения проблемы. Способ решения проблемы
+              </div>
+            </li>
+            <li class="solution__item">
+              <h4 class="solution__title title">Проблема</h4>
+              <div class="solution__descr descr">
+                Способ решения проблемы. Способ решения проблемы
+              </div>
+            </li>
+            <li class="solution__item">
+              <h4 class="solution__title title">Проблема</h4>
+              <div class="solution__descr descr">
+                Способ решения проблемы. Способ решения проблемы
+              </div>
+            </li>
+            <li class="solution__item">
+              <h4 class="solution__title title">Проблема</h4>
+              <div class="solution__descr descr">
+                Способ решения проблемы. Способ решения проблемы
+              </div>
+            </li>
+            <li class="solution__item">
+              <h4 class="solution__title title">Проблема</h4>
+              <div class="solution__descr descr">
+                Способ решения проблемы. Способ решения проблемы
+              </div>
+            </li>
+            <li class="solution__item">
+              <h4 class="solution__title title">Проблема</h4>
+              <div class="solution__descr descr">
+                Способ решения проблемы. Способ решения проблемы
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="our-solution">
+        <div class="container">
+          <h2 class="our-solution__title title">Наши решения</h2>
+          <ul class="our-solution__list">
+            <li class="our-solution__item">
+              <ul class="our-solution__numbers">
+                <li class="our-solution__number our-solution__number_active">1</li>
+                <li class="our-solution__number">2</li>
+                <li class="our-solution__number">3</li>
+              </ul>
+              <div class="our-solution__text">Клиент <span>бронирует</span> ячейку в телефоне</div>
+            </li>
+            <li class="our-solution__item">
+              <ul class="our-solution__numbers">
+                <li class="our-solution__number">1</li>
+                <li class="our-solution__number our-solution__number_active">2</li>
+                <li class="our-solution__number">3</li>
+              </ul>
+              <div class="our-solution__text">Сразу производит <span>оплату</span></div>
+            </li>
+            <li class="our-solution__item">
+              <ul class="our-solution__numbers">
+                <li class="our-solution__number">1</li>
+                <li class="our-solution__number">2</li>
+                <li class="our-solution__number our-solution__number_active">3</li>
+              </ul>
+              <div class="our-solution__text">
+                Электронные замки позволяют клиенту открывать ячейку 24/7 напрямую при помощи
+                телефона, для пользователей, плохо владеющих телефоном предусмотрена кодовая PRDIF
+                панель
+              </div>
+            </li>
+          </ul>
+          <button class="our-solution__button button">Демо-версия</button>
+        </div>
+      </section>
+      <section class="products" id="products">
+        <div class="container">
+          <h2 class="title products__title">Наши продукты</h2>
+          <ul class="products__list">
+            <li class="products__item product">
+              <div class="product__subtitle">Полная</div>
+              <h3 class="product__title title">Автоматизация склада</h3>
+              <p class="product__descr descr">
+                Контейнеры оборудованы электронными замками и системами доступа, которые позволяют
+                клиентам управлять своими контейнерами удаленно через мобильные приложения или
+                интернет-порталы.
+              </p>
+              <div class="product__price">
+                1659₽
+                <span class="period">в месяц</span>
+              </div>
+              <div class="product__price-year">19 900 ₽/год</div>
+              <button class="product__button button">Купить год</button>
+            </li>
+            <li class="products__item product">
+              <div class="product__subtitle">Система</div>
+              <h3 class="product__title title">Онлайн бронирования</h3>
+              <p class="product__descr descr">
+                Через официальный веб-сайт или мобильное приложение, пользователи могут просмотреть
+                доступные контейнеры, ознакомиться с их размерами и стоимостью, а затем выбрать
+                оптимальный вариант и забронировать его онлайн.
+              </p>
+              <div class="product__price">
+                1290₽
+                <span class="period">в месяц</span>
+              </div>
+              <div class="product__price-year">14 2480 ₽/год</div>
+              <button class="product__button button">Купить год</button>
+            </li>
+          </ul>
+          <div class="products__table">
+            <div class="table__wrapper">
+              <div class="table__head">
+                <div class="table__row">
+                  <div class="table__cell">Плюсы</div>
+                  <div class="table__cell">Цифровизация склада</div>
+                  <div class="table__cell">Автоматизация склада</div>
+                </div>
+              </div>
+              <div class="table__body">
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Бронирование ячеек и <br />
+                      заключение договора на сайте
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Онлайн оплата <br />
+                      и подписка на услуги
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Доступ на склад 24/7
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell"></div>
+                  <div class="table__cell"></div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Делегирование доступа к <br />
+                      ячейке
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell"></div>
+                  <div class="table__cell"></div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Аналитика по клиентам
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Панель администратора
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Безопасная авторизация <br />
+                      через СМС
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Совместимость со всем <br />
+                      оборудованием Store
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell"></div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Обработка персональных <br />
+                      данный в согласии с 152 ФЗ
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Калькулятор стоимости <br />
+                      бокса на сайте
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Возможность блокировки ячейки <br />
+                      в случае просрочки оплаты
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell"></div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Интеграция с CRM системами
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Расширенная аналитика по <br />
+                      клиентам
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell"></div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Автоматическое уведомление <br />
+                      клиентов о необходимсоти оплаты
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Автоматическа проверка паспорта
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell"></div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+                <div class="table__row">
+                  <div class="table__cell">
+                    <div class="cell__wrapper">
+                      Работа с электронными замками
+                      <span class="table__question">
+                        <img src="./assets/icons/question.svg" alt="questions" />
+                      </span>
+                      <span class="table__answer">
+                        Удобная и безопасная возможность оплатить аренду или дополнительные услуги,
+                        сокращая время и упрощая процесс оплаты для максимального комфорта клиентов.
+                      </span>
+                    </div>
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                  <div class="table__cell">
+                    <img src="./assets/icons/check.svg" alt="check" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="table__show_wrapper">
+            <div class="table__show">
+              <img src="./assets/icons/arrow.svg" alt="arrow" />Показать еще
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="our-products">
+        <div class="container">
+          <h2 class="our-products__title title">Наша продукция</h2>
+          <p class="our-products__descr descr">
+            Современные системы безопасности и гибкие условия аренды делают эти контейнеры идеальным
+            выбором для организации пространства и сохранения ценных вещей. Узнайте о них больше.
+          </p>
+          <div class="our-products__subtitle subtitle">наша продукция</div>
+          <h3 class="our-products__title-sec title">Наши замки</h3>
+          <ul class="our-products__cards">
+            <li class="our-product__item">
+              <div class="our-product__img">
+                <img src="./assets/images/our-product-1.jpg" alt="our-product" />
+              </div>
+              <div class="our-product__body">
+                <h3 class="our-product__title title">SecureGuard Locks</h3>
+                <p class="our-product__descr descr">
+                  Надежные замки для контейнеров хранения обеспечивающие безопасность и защиту.
+                </p>
+                <ul class="our-product__numbers">
+                  <li class="our-product__number our-product__number_active">1</li>
+                  <span>или</span>
+                  <li class="our-product__number">2</li>
+                </ul>
+              </div>
+              <div class="our-product__deckor">
+                <img src="./assets/icons/our-product-deckor.svg" alt="our-product-deckor" />
+              </div>
+            </li>
+            <li class="our-product__item">
+              <div class="our-product__img">
+                <img src="./assets/images/our-product-2.jpg" alt="our-product" />
+              </div>
+              <div class="our-product__body">
+                <h3 class="our-product__title title">FortressLock Systems</h3>
+                <p class="our-product__descr descr">
+                  Создают непроницаемую защиту и безопасность для вашего хранилища.
+                </p>
+                <ul class="our-product__numbers">
+                  <li class="our-product__number">1</li>
+                  <span>или</span>
+                  <li class="our-product__number our-product__number_active">2</li>
+                </ul>
+              </div>
+              <div class="our-product__deckor">
+                <img src="./assets/icons/our-product-deckor.svg" alt="our-product-deckor" />
+              </div>
+            </li>
+          </ul>
+          <div class="our-system__subtitle subtitle">наша продукция</div>
+          <h3 class="our-products__title-sec title">Наша система</h3>
+          <ul class="our-system__cards">
+            <li class="our-system__item">
+              <div class="card__top">
+                <div class="card__img">
+                  <img src="./assets/images/sysrem-1.svg" alt="system" />
+                </div>
+                <div class="card__text">
+                  <h2 class="card__title title">RFID</h2>
+                  <div class="card__subtitle">панель</div>
+                  <div class="card__benefit">-идентификацию клиентов</div>
+                </div>
+              </div>
+              <div class="card__benefit">-быстрый и удобный доступ к контейнерам хранения.</div>
+              <div class="card__price">
+                <ul class="price__numbers">
+                  <li class="price__number price__number_active">1</li>
+                  <li class="price__number">2</li>
+                  <li class="price__number">3</li>
+                </ul>
+                <div class="price__body">
+                  <div class="price__title">1659₽</div>
+                  <div class="price__period">в месяц</div>
+                  <div class="price__year">19 900 ₽/год</div>
+                  <button class="button price__button">Купить</button>
+                </div>
+              </div>
+            </li>
+            <li class="our-system__item">
+              <div class="card__top">
+                <div class="card__img">
+                  <img src="./assets/images/sysrem-2.svg" alt="system" />
+                </div>
+                <div class="card__text">
+                  <h2 class="card__title title">Кодовая</h2>
+                  <div class="card__subtitle">панель</div>
+                  <div class="card__benefit">-идентификацию клиентов</div>
+                </div>
+              </div>
+              <div class="card__benefit">-быстрый и удобный доступ к контейнерам хранения.</div>
+              <div class="card__price">
+                <ul class="price__numbers">
+                  <li class="price__number">1</li>
+                  <li class="price__number price__number_active">2</li>
+                  <li class="price__number">3</li>
+                </ul>
+                <div class="price__body">
+                  <div class="price__title">1659₽</div>
+                  <div class="price__period">в месяц</div>
+                  <div class="price__year">19 900 ₽/год</div>
+                  <button class="button price__button">Купить</button>
+                </div>
+              </div>
+            </li>
+            <li class="our-system__item">
+              <div class="card__top">
+                <div class="card__img">
+                  <img src="./assets/images/sysrem-3.svg" alt="system" />
+                </div>
+                <div class="card__text">
+                  <h2 class="card__title title">Доступ</h2>
+                  <div class="card__subtitle">панель</div>
+                  <div class="card__benefit">-идентификацию клиентов</div>
+                </div>
+              </div>
+              <div class="card__benefit">-быстрый и удобный доступ к контейнерам хранения.</div>
+              <div class="card__price">
+                <ul class="price__numbers">
+                  <li class="price__number">1</li>
+                  <li class="price__number">2</li>
+                  <li class="price__number price__number_active">3</li>
+                </ul>
+                <div class="price__body">
+                  <div class="price__title">1659₽</div>
+                  <div class="price__period">в месяц</div>
+                  <div class="price__year">19 900 ₽/год</div>
+                  <button class="button price__button">Купить</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="container">
+          <h2 class="partners__title title">Наши партнеры</h2>
+          <div class="partners__descr descr">
+            Узнайте подробнее о парнтнерах, с которыми мы работаем.
+          </div>
+          <ul class="partners__list">
+            <li class="partner__item">
+              <img src="./assets/icons/google.svg" alt="google" />
+            </li>
+            <li class="partner__item">
+              <img src="./assets/icons/sony.svg" alt="sony" />
+            </li>
+            <li class="partner__item">
+              <img src="./assets/icons/ibm.svg" alt="ibm" />
+            </li>
+            <li class="partner__item">
+              <img src="./assets/icons/apple.svg" alt="apple" />
+            </li>
+            <li class="partner__item">
+              <img src="./assets/icons/microsoft.svg" alt="microsoft" />
+            </li>
+            <li class="partner__item">
+              <img src="./assets/icons/samsung.svg" alt="samsung" />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="how-work" id="howItWork">
+        <div class="container"></div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <h2 class="title contact__title">Связаться с нами</h2>
+          <div class="descr contact__descr">
+            Остались вопросы? Оставьте свои контакты, и мы свяжемся с вами
+          </div>
+          <div class="contact__wrapper">
+            <div class="contact__img">
+              <img src="./assets/icons/contact.svg" alt="contact" />
+            </div>
+            <form class="contact__form form">
+              <h3 class="title form__title">Оставьте заявку:</h3>
+              <input type="text" class="form__input input input__name" placeholder="Ваше имя" />
+              <input
+                type="email"
+                class="form__input input input__phone"
+                placeholder="Ваш телефон"
+              />
+              <p class="descr form__descr">
+                Нажимая “Отправить” вы подтверждаете свое согласие на обработку и хранение ваших
+                персональных данных в соответствии с
+                <a href="#">политикой обработки персональных данных</a>.
+              </p>
+              <button class="button form__button button__send">Отправить запрос</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__line line">
+        <img src="./assets/icons/line.svg" alt="line" />
+      </div>
+      <div class="container">
+        <div class="footer__logo logo">
+          <img src="./assets/icons/logo.svg" alt="logo" />
+        </div>
+        <nav class="footer__nav nav">
+          <ul class="footer__list list">
+            <li class="footer__item item">
+              <a href="#about" class="footer__link link">О нас</a>
+            </li>
+            <li class="footer__item item">
+              <a href="#ourSolutions" class="footer__link link">Наши решения</a>
+            </li>
+            <li class="footer__item item">
+              <a href="#products" class="footer__link link">Продукты</a>
+            </li>
+            <li class="footer__item item">
+              <a href="#howItWork" class="footer__link link">Как это работает</a>
+            </li>
+            <li class="footer__item item">
+              <div class="footer__phone phone">
+                <a href="tel:+78008999999">
+                  <span class="phone-icon">
+                    <img src="./assets/icons/phone.svg" alt="phone" />
+                  </span>
+                  <span> 8 800 899 99 99 </span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>

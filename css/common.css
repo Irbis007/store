@@ -1,0 +1,205 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f1f7ff;
+  font-family: "Circe", sans-serif;
+}
+
+main{
+  overflow: hidden;
+}
+
+section {
+  margin-top: 150px;
+}
+
+h1{
+  font-size: 80px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+.title {
+  font-weight: 700;
+  color: #214080;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.descr {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 10px;
+}
+
+.button {
+  background: linear-gradient(218deg, #214080 0%, #2954b1 85.96%);
+  border: none;
+  border-radius: 11px;
+
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.deckor {
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+  background-color: #fff;
+  filter: blur(1000px);
+  width: 547px;
+  height: 747px;
+  opacity: .3;
+  z-index: 1;
+}
+
+.deckor-1{
+  left: 0;
+  transform: translateX(10px);
+}
+
+.deckor-2{
+  right: 0;
+  transform: translateX(-25px);
+}
+
+@media (max-width: 1440px) {
+  section {
+    margin-top: 86px;
+  }
+  .container {
+    max-width: 1030px;
+  }
+  h1{
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .descr {
+    font-size: 25px;
+  }
+  .deckor {
+    width: 480px;
+    height: 640px;
+  }
+  .deckor {
+    width: 480px;
+    height: 640px;
+  }
+  .deckor-1 {
+    transform: translateX(-100px);
+  }
+  .deckor-2 {
+    transform: translateX(100px);
+  }
+}
+
+@media (max-width: 1000px) {
+  section {
+    margin-top: 77px;
+  }
+  .container {
+    padding: 0 24px;
+  }
+  h1{
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .descr {
+    font-size: 22px;
+  }
+  .deckor{
+    width: 300px;
+    height: 560px;
+    filter: blur(800);
+  }
+  .deckor-1 {
+    transform: translateX(0px) translateY(-128px) rotate(12deg);
+  }
+  .deckor-2 {
+    transform: translateX(-62px) rotate(12deg);
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    margin-top: 38px;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  h1{
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 19px;
+  }
+  .descr {
+    font-size: 16px;
+  }
+  .deckor{
+    width: 210px;
+    height: 370px;
+  }
+  .deckor-1 {
+    transform: translateX(0px) translateY(0px) rotate(12deg);
+  }
+  .deckor-2 {
+    transform: translateX(-56px) translateY(100px) rotate(12deg);
+  }
+}
+
+@media (max-width: 576px) {
+  section {
+    margin-top: 50px;
+  }
+  .container {
+    padding: 0 12px;
+  }
+  h1{
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .descr {
+    font-size: 11px;
+  }
+  .deckor{
+    width: 100px;
+    height: 340px;
+  }
+  .deckor-1 {
+    transform: translateX(0px) translateY(0px) rotate(22deg);
+  }
+  .deckor-2 {
+    transform: translateX(-56px) translateY(100px) rotate(22deg);
+  }
+}

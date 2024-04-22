@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #2954B1;
+  z-index: 10000;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.form__title {
+  font-size: 40px;
+  font-weight: 700;
+  text-wrap: nowrap;
+}
+
+.form__descr{
+  text-align: end;
+  margin-top: 30px;
+}
+
+.modal__wrapper{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  padding: 70px 63px;
+  background: url(../assets/images/modal_bg.svg) ;
+  background-color: #F1F7FF;
+  border-radius: 20px;
+
+  box-shadow: 0 0 18px rgba(0, 0, 0, .1);
+}
+
+.modal__img{
+  flex-shrink: 0;
+  width: 320px;
+}
+
+.modal__img img{
+  width: 100%;
+}
+
+.close__button {
+  position: absolute;
+  top: 31px;
+  left: 46px;
+  width: 41px;
+  height: 41px;
+  cursor: pointer;
+}
+
+.close__button img {
+  width: 100%;
+  height: 100%;
+}
+
+.modal__form{
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+
+
+.form__input{
+  max-width: 344px;
+  width: 100%;
+  height: 74px;
+  margin-top: 23px;
+  padding: 18px 30px;
+  box-shadow: 0 0 18px rgba(0, 0, 0, .1);
+  filter: drop-shadow(0 10px 0 #486DBC);
+
+  border: none;
+  border-radius: 0 13px 13px 13px;
+
+  font-size: 25px;
+}
+
+.form__input::placeholder{
+  font-size: 25px;
+  color: #d9d9d9;
+}
+
+.form__descr, .form__descr a{
+  margin-top: 45px;
+  color: #2954b380;
+  font-size: 16px;
+  max-width: 330px;
+}
+
+.form__button{
+  width: max-content;
+  line-height: 150%;
+  margin-top: 32px;
+  padding: 15px 22px;
+}
+
+
+.toastify__container {
+  position: fixed;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  width: 340px;
+  text-align: center;
+  background: rgb(29, 215, 29);
+  z-index: 10000000;
+  transition: 0.3s all ease;
+}
+
+.toastify__container.active {
+  top: 10px;
+}
+
+
+.modal .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1440px) {
+  .form__title {
+    font-size: 30px;
+  }
+  .modal__img{
+    width: 265px;
+    margin-top: -70px;
+  }
+  .form__input{
+    width: 295px;
+    height: 63px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .modal__wrapper{
+    width: 766px;
+  }
+  .modal__img{
+    width: 265px;
+    margin-top: -100px;
+  }
+  .modal__form{
+    max-width: 333px;
+  }
+  .form__input{
+    width: 279px;
+    height: 58px;
+    margin-top: 32px;
+    font-size: 22px;
+  }
+  .form__input::placeholder{
+    font-size: 22px;
+  }
+  .form__descr{
+    margin-top: 28px;
+    font-size: 12px;
+  }
+  .form__descr a{
+    font-size: 12px;
+  }
+  .form__button{
+    font-size: 20px;
+    margin-top: 26px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .modal__descr{
+    
+    margin-top: 10px;
+  }
+  .modal__wrapper{
+    width: 577px;
+    margin-top: 65px;
+  }
+  .form__title {
+    font-size: 24px;
+  }
+  .modal__img{
+    width: 194px;
+    margin-top: -55px;
+  }
+  .modal__form{
+    max-width: 258px;
+  }
+  .form__input{
+    width: 216px;
+    height: 45px;
+    margin-top: 25px;
+    font-size: 17px;
+  }
+  .form__input::placeholder{
+    font-size: 17px;
+  }
+  .form__descr{
+    margin-top: 20px;
+    font-size: 9px;
+  }
+  .form__descr a{
+    font-size: 9px;
+  }
+  .form__button{
+    padding: 11px 17px;
+    font-size: 15px;
+    margin-top: 11px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .modal__img{
+    width: 250px;
+    margin-top: -55px;
+  }
+  .modal__form{
+    max-width: 230px;
+  }
+}
+
+@media (max-width: 576px) {
+  .form__title {
+    width: 123px;
+    font-size: 20px;
+    text-wrap: wrap;
+  }
+  .form__descr{
+    font-size: 8px;
+    text-align: start;
+    padding-left: 12px;
+    margin: 20px 0px;
+
+  }
+  .modal .container{
+    padding: 0;
+  }
+  .modal__wrapper{
+    width: 267px;
+    overflow: hidden;
+    position: relative;
+    padding: 47px 15px 77px;
+  }
+  .modal__img{
+    opacity: .2;
+    position: absolute;
+    width: 170px;
+    bottom: 3px;
+    right: 0;
+    z-index: 1;
+  }
+  .modal__form{
+    z-index: 10;
+  }
+
+  .close__button {
+    display: none;
+  }
+  .modal__form{
+    align-items: flex-start;
+    max-width: 230px;
+    
+  }
+  .modal .form__button{
+    margin-top: 0;
+  }
+  .form__button{
+    font-size: 11px;
+    padding: 7px 9px;
+  
+  }
+}
+

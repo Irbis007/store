@@ -1,0 +1,250 @@
+.subtitle {
+  position: relative;
+  width: max-content;
+  padding-bottom: 7px;
+  color: #2141834d;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.subtitle::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 1px;
+  background-color: #2141834d;
+  border-radius: 1px;
+}
+
+.our-products__subtitle {
+  margin-top: 65px;
+}
+
+.our-products__title-sec {
+  margin-top: 10px;
+}
+
+.our-products__cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 65px;
+}
+
+.our-product__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 590px;
+  padding: 0 32px 25px 71px;
+  background-color: #fff;
+  border-radius: 18px;
+
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.1);
+  text-align: right;
+  overflow: hidden;
+}
+
+.our-product__deckor {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 81%;
+}
+.our-product__deckor img {
+  height: 100%;
+}
+
+.our-product__item:nth-child(2) {
+  text-align: left;
+  flex-direction: row-reverse;
+  padding: 0 0 25px 32px;
+}
+
+.our-product__item:nth-child(2) .our-product__deckor {
+  left: 0;
+  right: unset;
+  transform: translateY(-50%) rotateY(180deg);
+}
+
+.our-product__title {
+  margin-top: 50px;
+}
+
+.our-product__descr {
+  margin-top: 15px;
+}
+
+.our-product__numbers {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-top: 26px;
+  color: #214080;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.our-product__item:nth-child(2) .our-product__numbers {
+  justify-content: flex-start;
+}
+
+.our-product__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #929292;
+  border-radius: 50%;
+  color: #a9a9a9;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.our-product__number_active {
+  width: 38px;
+  height: 38px;
+  background-color: #2954b1;
+  color: #fff;
+  font-size: 22px;
+}
+
+@media (max-width: 1440px) {
+  .our-products__cards {
+    gap: 15px;
+    margin-top: 30px;
+  }
+  .our-product__item {
+    width: 500px;
+    padding: 0 20px 25px 40px;
+  }
+  .our-product__img img {
+    width: 144px;
+  }
+  .our-product__item:nth-child(2) .our-product__img img {
+    width: 200px;
+  }
+  .our-product__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .our-product__title {
+    width: 200px;
+  }
+  .our-product__item:nth-child(1) .our-product__title {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .subtitle {
+    font-size: 13px;
+    margin-top: 40px;
+  }
+  .subtitle::after {
+    width: 84%;
+  }
+  .our-product__item {
+    padding: 0 20px 25px 40px;
+  }
+  .our-product__item:nth-child(2) {
+    padding: 0 0 25px 20px;
+  }
+  .our-product__img img {
+    max-width: 140px;
+    width: 100%;
+  }
+  .our-product__item:nth-child(2) .our-product__img {
+    margin-right: 15px;
+  }
+  .our-product__item:nth-child(2) .our-product__img img {
+    max-width: 195px;
+    width: 100%;
+  }
+  .our-product__body {
+    max-width: 200px;
+  }
+  .our-product__title {
+    max-width: 200px;
+  }
+  .our-product__descr {
+    font-size: 17px;
+  }
+  .our-product__numbers {
+    font-size: 15px;
+  }
+  .our-product__number {
+    width: 26px;
+    height: 26px;
+    font-size: 15px;
+  }
+  .our-product__number_active {
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 870px) {
+  .our-product__title {
+    max-width: 150px;
+  }
+  .our-product__descr {
+    font-size: 15px;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  .our-product__img img {
+    max-width: 105px;
+  }
+  .our-product__item:nth-child(2) .our-product__img img {
+    max-width: 150px;
+  }
+  .our-product__title {
+    max-width: 120px;
+  }
+  .our-product__descr {
+    font-size: 13px;
+    max-width: 140px;
+  }
+  .our-product__numbers {
+    font-size: 13px;
+  }
+  .our-product__number {
+    width: 23px;
+    width: 23px;
+    font-size: 13px;
+  }
+  .our-product__number_active {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .subtitle {
+    font-size: 10px;
+    margin-top: 30px;
+  }
+  .subtitle::after {
+    width: 81%;
+  }
+  .our-products__cards {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .our-product__item {
+    width: 100%;
+  }
+}
